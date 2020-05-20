@@ -1,0 +1,27 @@
+<view class="body" hover-class="none" hover-stop-propagation="false">
+    <view class="top-box">
+    <image class="head" src="{{inf.head}}"></image>
+    <view class="name">
+        <view class="id">
+            用户id:{{inf.userId}}
+        </view>
+        <view class="time">
+            发布于：{{inf.time}}
+        </view>
+    </view>
+    </view>
+    <view class="content">
+       <view class="price" >
+           ¥{{inf.price}}
+       </view> 
+       <view class="text" >
+           {{inf.content}}
+       </view>
+    </view>
+</view>
+
+<view class="btn-box" hover-class="none" hover-stop-propagation="false">
+    <button class="btn1" size="mini" bindtap="accept">接单</button>
+    <button class="btn2" size="mini" bindtap="gochat">找ta聊聊</button>
+</view>
+

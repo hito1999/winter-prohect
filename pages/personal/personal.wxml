@@ -1,0 +1,32 @@
+<view class="con">
+     <!-- 第一区域：用户信息 -->
+     <view class="user" bindtap="goMes">
+          <button class="one" open-type="getUserInfo">
+                <image src="{{src}}" bindtap="changeMes"></image>
+                <view class="two">
+                      <text class="name">{{name}}</text>
+                </view>
+          </button>
+     </view>
+     <view class="main">
+            <view class="poster">
+                <button bindtap="goPoster">
+                        <view class="text">发帖</view>
+                </button>
+             </view>
+             <view class="poster">
+                <button bindtap="goAccept">
+                        <view class="text">接帖</view>
+                </button>
+             </view>
+             <view class="product">
+                <button bindtap="goProduct">历史订单</button>
+             </view>
+             <view class="collecion">
+                <button bindtap="goCollectionShop">店铺收藏</button>
+             </view>
+             <view class="collecion">
+                <button bindtap="goCollectionProduct">二手商品收藏</button>
+             </view>
+     </view>
+</view>

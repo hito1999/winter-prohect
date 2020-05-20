@@ -1,0 +1,25 @@
+<view class="con">
+      <!-- 第一区域：标题 -->
+      <view class="header">
+            <text>我的店铺</text>
+      </view>
+      <!-- 第二区域：main -->
+      <view class="main">
+           <view>
+                 <input class="shopname" disabled="true" value="店铺名字"></input>
+                 <input class="input" disabled="true" value="{{shopname}}"></input>
+           </view>
+           <view>
+                 <input disabled="true" class="location" value="店铺地址"></input>
+                 <input class="input" disabled="true" value="{{address}}"></input>
+           </view>
+           <view>
+                 <input disabled="true" class="tel" value="店铺电话"></input>
+                 <input class="input" disabled="true" value="{{tel}}"></input>
+           </view>
+           <view>
+                 <input disabled="true" class="intro" value="店铺介绍"></input>
+                 <input class="input" disabled="true" value="{{intro}}"></input>
+           </view>
+      </view>
+</view>

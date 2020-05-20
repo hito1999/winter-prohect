@@ -1,0 +1,14 @@
+<!--pages/showOrding/index.wxml-->
+<view class="nickName">订餐记录</view>
+<view class="lan">
+      <view wx:for="{{history}}" class="wrapper">
+         <view class="oneLine">
+              <view>{{item.shopname}}</view>
+              <view>电话:{{item.shoptel}}</view>
+		    </view>
+      <view class="twoLine">
+        <view>{{item.createTime}}</view>
+        <view class="{{item.status=='未接单'?'showStatus':'showStatus1'}}">{{item.status}}</view>
+      </view>
+      </view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/showOrding/index.wxss */
+page{
+	color:#666;
+	font-size:34rpx;
+}
+.nickName{
+	height:50rpx;
+	padding:10rpx 20rpx;
+	border-bottom:6rpx solid #e8ebed;
+}
+.wrapper{
+	height:150rpx;
+	border-bottom:6rpx solid #e8ebed;
+	padding:10rpx 20rpx;
+}
+.oneLine,
+.twoLine{
+	height:75rpx;
+	line-height:75rpx;
+	overflow:hidden;
+}
+.oneLine view:first-child,
+.twoLine view:first-child{
+	float:left;
+}
+.oneLine view:last-child,
+.twoLine view:last-child{
+	float:right;
+}
+.showStatus,
+.showStatus1{
+	color:white;
+	text-align:center;
+	height:70rpx;
+	font-size:28rpx;
+	width:110rpx;
+	border-radius:12rpx;
+	background-color:#f40;
+}
+.showStatus1{
+  background-color:greenyellow;
+}
+

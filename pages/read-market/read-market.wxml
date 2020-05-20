@@ -1,0 +1,38 @@
+<view class="body" hover-class="none" hover-stop-propagation="false">
+    <view class="top-box">
+    <image class="head" src="{{inf.userHead}}" mode="aspectFill"></image>
+    <view class="name">
+        <view class="id">
+            用户id:{{inf.userId}}
+        </view>
+        <view class="time">
+            发布于：{{inf.createTime}}
+        </view>
+    </view>
+    </view>
+    <view class="content">
+       <view class="price" >
+           ¥{{inf.price}}
+       </view> 
+       <view class="text" >
+           {{inf.content}}
+       </view>
+       <view class="img-box">
+           <image class="show-img" wx:for="{{inf.images}}" src="{{item}}" mode="aspectFill" data-url="{{item}}" bindtap="show">  
+            </image>
+       </view>
+    </view>
+    <!-- <view class="comment">
+    <view class="comment-title">
+        评论区：
+    </view>
+        <comment msg="{{comments}}"></comment>
+    </view> -->
+</view>
+
+<view class="btn-box" hover-class="none" hover-stop-propagation="false">
+    <button class="btn1" size="mini">接单</button>
+    <button class='iconfont {{collect=="收藏"?"icon-shoucang" :"icon-shoucang2"}} btn3' size="mini" bindtap="collect"> {{collect}}</button>
+    <button class="btn2" size="mini" bindtap="gochat">找ta聊聊</button>
+</view>
+
