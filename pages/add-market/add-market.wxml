@@ -1,0 +1,34 @@
+<view class="input-box" hover-class="none" hover-stop-propagation="false">
+    <textarea class="content"
+    placeholder="输入跑腿内容，什么快递，地点，送达时间......"
+    value="{{content}}"
+    bindblur="change">
+    </textarea>
+    <view class="price-box">
+        <text class="iconfont icon-jiage text1">价格</text>
+        <input class="" placeholder="这里输入价格" bindblur="getprice">
+        </input>
+    </view>
+    <view class="time-box">
+        <text class="iconfont icon-ico_home_committed text1">发布时间</text>
+        <text class="">{{time}}</text>
+    </view>
+    <view class="id-box">
+        <text class="iconfont icon-yonghu text1">发帖用户id</text>
+        <text class="">{{userid}}</text>
+    </view>
+     <view class="img-box">
+        <text class="iconfont icon-yonghu text1">上传图片</text>
+        <button class="img-btn" bindtap="img">
+            +
+        </button>
+        </view>
+        <view class="img-show-box">
+            <image class="show-img" wx:for="{{pic}}" src="{{item}}" mode="aspectFill" data-url="{{item}}" bindtap="show">  
+            </image>
+        </view>
+    <button  bindtap="submit"
+        hover-class="" hover-stop-propagation="false" >
+        提交
+    </button>
+</view>

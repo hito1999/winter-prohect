@@ -1,0 +1,53 @@
+<view class="con">
+      <form bindsubmit="formSubmit">
+            <view>
+                  <view class="descp-text">店铺名称</view>
+                        <input type="text" name="Store_Name" class="desc-input"  placeholder='请输入店铺名称' data-tag="Store_Name" bindblur='Store_NameInput' value="{{Store_Name}}"/>
+            </view>
+            <view>
+                  <view class="descp-text">照片</view>
+                  <view class="addPic">
+                       <block class="mainPic" wx:for="{{pics}}" wx:key="index">
+                            <view class="picture">
+                                  <image catchtap="onmoreAdd" class="less_img" src="{{pics[index]}}"></image>
+                            </view>
+                        </block>
+                        <view class="picture">
+                              <image catchtap="onmoreAdd" class="lease_img" src="{{src}}" style="{{style}}"></image>
+                        </view>
+                  </view>
+            </view>
+            <view>
+                    <view class="descp-text">地址</view>
+                    <input type="text" name="Owner_Location" class="desc-input"  placeholder='请输入店铺地址' data-tag="Owner_Location" bindblur='Owner_LocationInput' value="{{location}}"/>
+            </view>
+            <view>
+                    <view class="descp-text">店铺简介</view>
+                    <input type="text" name="Store_Intro" class="desc-input"  placeholder='请输入店铺简介(主营范围)' data-tag="Store_Intro" bindblur='Store_IntroInput' value="{{Store_Intro}}"/>
+            </view>
+            <view class="bottomBtn">
+                  <button class="submitBtn" form-type="submit">提交</button>
+            </view>
+      </form>
+</view>
+
+<!-- <view class="container">
+      <view>
+            <view class="descp-text">店铺名称</view>
+            <input type="text" name="Store_Name" class="desc-input"  placeholder='请输入店铺名称' data-tag="Store_Name" bindblur='setInputValue' value=""/>
+      </view>
+      <view>
+            <button style="margin:30rpx;" bindtap="chooseimage">门店照片，点击按钮自动获取</button>
+            <image src="{{tempFilePaths}}" mode="aspecFill" class="desc-input-picture"></image>
+      </view>
+      <view>
+            <view class="descp-text">店主</view>
+            <input type="text" name="Owner_Name" class="desc-input"  placeholder='请输入店主姓名' data-tag="Owner_Name" bindblur='setInputValue' value=""/>
+      </view>
+      <view>
+            <view class="descp-text">联系电话</view>
+            <input type="text" name="Owner_Tel" class="desc-input"  placeholder='请输入店主联系电话' data-tag="Owner_Tel" bindblur='setInputValue' value=""/>
+      </view>
+      
+</view>
+<button class="submit" bindtap="ajax">submit</button> -->

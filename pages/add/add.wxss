@@ -1,0 +1,81 @@
+
+.bottomBtn{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100rpx;
+  font-size: 32rpx;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.submitBtn{
+  cursor: pointer;
+  margin-right: 0;
+  padding-right: 0;
+  width: 35%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ff9829;
+  color: #fff;
+  text-align: center;
+  border-radius:0;
+}
+
+.con{
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 20rpx 0 20rpx;
+}
+
+.descp-text{
+margin: 20rpx 0 0 20rpx;
+}
+
+.desc-input-picture{
+  border: 1rpx solid #777777;
+  width: 420rpx;
+  margin: 20rpx 60rpx 20rpx 60rpx;
+  height: 280rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 280rpx;
+}
+
+.desc-input{
+  border: 1rpx solid #777777;
+  width: 84%;
+  margin: 20rpx 20rpx 20rpx 40rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+}
+
+.submit{
+  border: 1rpx solid #777777;
+  margin-right: 20rpx;
+  padding-right: 0;
+  height: 65rpx;
+  width: 220rpx;
+  line-height: 65rpx;
+  color: blue;
+}
+
+block{
+  display: flex;
+  flex-direction: row;
+}
+
+.picture{
+  width: 76vw;
+  height: 360rpx;
+  margin: 20rpx 60rpx 0 60rpx;
+}
+
+.less_img,.lease_img{
+  border-radius: 20rpx;
+  width: 90%;
+  height: 90%;
+  margin: 0 20rpx 0 10rpx;
+  border: 1rpx solid #777777;
+}
