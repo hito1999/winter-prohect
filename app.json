@@ -1,0 +1,79 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/errands/errands",
+    "pages/demo1/demo1",
+    "pages/market/market",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/addpost/addpost",
+    "pages/read-errand/read-errand",
+    "pages/chat/chat",
+    "pages/read-market/read-market",
+    "pages/add-market/add-market",
+    "pages/chatting/index",
+    "pages/personal/personal",
+    "pages/accept/accept",
+    "pages/collectShop/collectShop",
+    "pages/collectionproduct/collectionproduct",
+    "pages/mes/mes",
+    "pages/mes/name/name",
+    "pages/mes/Tel/id",
+    "pages/mes/address/address",
+    "pages/mes/email/profess",
+    "pages/mes/sex/sex",
+    "pages/poster/poster",
+    "pages/showOrding/index",
+    "pages/business/index",
+    "pages/acceptList/acceptList",
+    "pages/add/add",
+    "pages/choose/choose",
+    "pages/list/list",
+    "pages/listIndex/listIndex",
+    "pages/marketDetail/index",
+    "pages/menu/menu",
+    "pages/menuComplete/menuComplete",
+    "pages/menuIndex/menuIndex",
+    "pages/orderCar/index",
+    "pages/orderSubmit/index",
+    "pages/ordering/ordering",
+    "pages/seek/seek",
+    "pages/seekIndex/seekIndex"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#6B8E23",
+    "navigationBarTitleText": "跑腿帮",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/errands/errands",
+        "text": "跑腿",
+        "iconPath": "icon/home.png",
+        "selectedIconPath": "icon/home1.png"
+      },
+      {
+        "pagePath": "pages/market/market",
+        "text": "市场",
+        "iconPath": "icon/market.png",
+        "selectedIconPath": "icon/market1.png"
+      },
+      {
+        "pagePath": "pages/choose/choose",
+        "text": "食堂",
+        "iconPath": "icon/eat.png",
+        "selectedIconPath": "icon/eat1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "icon/person.png",
+        "selectedIconPath": "icon/person1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
