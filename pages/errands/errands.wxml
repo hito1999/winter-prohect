@@ -1,0 +1,46 @@
+<view>
+    <view class="top">
+    <button class="btn1" bindtap="addpost">点我添加新的跑腿帖子</button>
+    <view class="sort">
+      
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+      <view class="kind-list-item">
+        <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+          <view class="kind-list-text">{{item.name}}</view>
+        </view>
+        <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+          <view class="view-box {{item.open ? 'view-box-show' : ''}}">
+            <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+              <view id="{{index}}" class="view" bindtap="sort">
+                <view class="view-text">{{page}}</view>
+                <view class="view-arrow"></view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    </view>
+    </view>
+    <view>所有帖子：</view>
+      <view
+      wx:for="{{one}}"
+      wx:key="id"
+      wx:for-item="a"
+      data-index="{{abc}}"
+      >
+      <text class="iconfont icon-icon-test4" selectable="false" space="false" decode="false">
+      </text>
+      <Lists class="lists" one="{{a}}"  index="{{index}}"></Lists>
+    </view>
+    <view class="bottom-box" wx:if="{{inf.length!=one.length}}">
+      <text class="iconfont icon-icon-test4" selectable="false" space="false" decode="false">
+        下拉加载更多数据
+      </text>
+    
+    </view>
+    <view class="bottom-box" wx:elif="{{inf.length==one.length}}">
+      <text class="iconfont icon-icon-test1" selectable="false" space="false" decode="false">后面已经没有数据了</text>
+    </view>
+</view>

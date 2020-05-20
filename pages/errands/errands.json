@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Lists":"../../components/Lists/Lists"
+  },
+  "navigationBarTitleText": "跑腿"
+}
