@@ -1,0 +1,27 @@
+<!--pages/orderSubmit/index.wxml-->
+<block wx:if="{{products.length!=0}}">
+<view class="meal">
+  <view class="search_navigator" wx:for="{{products}}" wx:key="id">
+    <text>{{item.productName}}</text>
+    <view>
+			 <text class="num">×{{item.num}}</text>
+    </view>
+  </view>
+  <textarea class="text" placeholder="请输入您的备注" bindinput="textFunction"></textarea>
+</view>
+</block>
+<block wx:else>
+   <view class="imageWrapper">
+   <image src="https://s2.ax1x.com/2020/02/28/3rwkvD.png" mode="widthFix"></image>
+	 </view>
+</block>
+
+<view class="all">
+	<view class="leftAll">
+		<view>合计: <text class="allPrice">¥{{price}}元</text></view>
+	</view>
+  <view class="middleAll" bindtap="cancel">取消</view>
+	<view class="rightAll" bindtap="handleOrdering">
+		订餐({{Allnum}})
+	</view>
+</view>

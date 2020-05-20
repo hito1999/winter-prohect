@@ -1,0 +1,14 @@
+<!--pages/ordering/ordering.wxml-->
+<view class="lan" wx:for="{{market}}">
+      <navigator url="../marketDetail/index?marketId={{item.shopId}}">
+          <view class="left">
+                  <image src="{{item.pic&&item.pic[0]=='h' ? item.pic :'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581319408392&di=d216a9c352a4dc9e144f0f1ced78b732&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D1149327929%2C349239231%26fm%3D214%26gp%3D0.jpg'}}" class="goods_image"></image>
+          </view>
+          <view class="Right">
+              <view class="shopname">店铺名称:{{item.shopname}}</view>
+              <view class="goods_nickname">店主昵称:{{item.nickname}}</view>
+              <view class="goods_Info">{{item.intro}}</view>
+          </view>
+      </navigator>
+</view>
+

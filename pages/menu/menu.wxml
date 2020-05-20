@@ -1,0 +1,14 @@
+<view class="wrapped">
+      <view class="con">
+        <view class="top">
+              <button class="post">添加菜谱</button>
+        </view>
+        <block class="box">
+              <view class="middle">
+                    <view class="content">食物:<input bindblur="productNameValue" placeholder="请输入食物名字" value="{{productName}}"></input></view>
+                    <view class="content">价格:<input bindblur="priceValue" placeholder="请输入食物价格" value="{{price}}"></input></view>
+              </view>
+        </block>
+        <button class="submit" bindtap="submit">提交</button>
+      </view>
+</view>

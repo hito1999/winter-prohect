@@ -1,0 +1,11 @@
+<view class="con">
+      <!-- 第一区域：标题 -->
+      <view class="header">
+            <text>昵称</text>
+      </view>
+      <!-- 第二区域：正文 -->
+      <view class="main">
+            <input value="{{name}}" disabled="true"></input>
+            <text class="tip">好名字可以让你的朋友更容易记住你</text>
+      </view>
+</view>

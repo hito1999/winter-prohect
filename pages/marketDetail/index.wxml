@@ -1,0 +1,46 @@
+<!--pages/marketDetail/index.wxml-->
+<swiper class="picWrapper" autoplay circular indicator-dots interval="1200">
+    <swiper-item  class="picItem" wx:for="{{image}}" wx:key="*this">
+       <view>
+          <image src="{{item}}" mode="widthFix" class="picImage"></image>
+       </view>
+    </swiper-item>
+</swiper>
+
+<view class="shortDes">
+	<view class="shortLeft">{{name}}</view>
+	<view class="shortMiddle">
+		<view></view>
+	</view>
+	<view class="shortRight">
+	   <image src="{{checked?'https://s2.ax1x.com/2020/02/28/3rwVDH.png':'https://s2.ax1x.com/2020/02/28/3rwZbd.png'}}"  class="checkedIcon" mode="widthFix" bindtap="ImageChange"></image>
+	   <view>收藏</view>
+	</view>
+</view>
+<view class="word">店铺详情    <text class="tel">店主电话:{{marketTel}}</text></view>
+<view class="meal">
+   <view class="search_navigator" wx:for="{{store}}" wx:key="id" wx:if="{{item.productName!=null&&item.productName!=''}}">
+    <text>{{item.productName}}</text>
+    <view>
+			 <text class="num">{{item.price}}元</text>
+			 <text class="numAdd" bindtap="numAddJian" data-oparation="{{1}}" data-index="{{index}}">+</text>
+    </view>
+  </view>
+</view>
+
+
+<view class="bottomBar">
+	<view class="one">
+		<view class="BarImage"><image src="https://s2.ax1x.com/2020/02/28/3rwFgO.png"  mode="widthFix"></image></view>
+		<text>联系客服</text>
+		<button open-type="contact"></button>
+	</view>
+	<view class="two">
+		<view class="BarImage"><image src="https://s2.ax1x.com/2020/02/28/3rwpU1.png" mode="widthFix"></image></view>
+		<text>分享</text>
+		<button open-type="share"></button>
+	</view>
+	<navigator url="../orderCar/index" class="three" bintap="textShow">购物车<view class="gouwuNum" wx:if="{{num!=0}}">{{num}}</view></navigator>
+	<navigator url="../orderSubmit/index" class="four">提交订餐</navigator>
+</view>
+

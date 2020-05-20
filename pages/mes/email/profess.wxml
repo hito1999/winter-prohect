@@ -1,0 +1,10 @@
+<view class="con">
+      <!-- 第一区域：标题 -->
+      <view class="header">
+            <text>电子信箱</text>
+      </view>
+      <!-- 第二区域：正文 -->
+      <view class="main">
+            <input value="{{email}}" disabled="true"></input>
+      </view>
+</view>

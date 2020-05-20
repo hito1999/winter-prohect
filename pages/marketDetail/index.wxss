@@ -1,0 +1,185 @@
+/* pages/marketDetail/index.wxss */
+button{
+	margin:0;
+	padding:0;
+}
+.picWrapper{
+	height:400rpx;
+}
+.picItem view{
+	display:flex;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+.picImage{
+	width:75%;
+}
+.shortLeft,
+.shortRight,
+.shortMiddle{
+	display:inline-block;
+	overflow:hidden;
+	border-bottom:10rpx solid #dedede;
+}
+.shortLeft{
+	width:80%;
+	font-size:40rpx;
+	height:100rpx;
+	line-height:100rpx;
+	text-align:center;
+}
+.shortMiddle{
+	width:4%;
+	height:100rpx;
+}
+.shortMiddle view{
+	width:5rpx;
+	height:90rpx;
+	margin:5rpx 0;
+	text-align:center;
+	background-color:#dedede;
+}
+.shortRight{
+	width:16%;
+	text-align:center;
+	font-size: 34rpx;
+	height:100rpx;
+	line-height:50rpx;
+}
+.shortRight view{
+	margin-top:-10rpx;
+}
+.checkedIcon {
+  width: 45rpx;
+}  
+.word{
+	color:#ff2d4a;
+	line-height:70rpx;
+	height:70rpx;
+	padding-left:20rpx;
+	font-size: 40rpx;
+	border-bottom:10rpx solid #dedede;
+}
+.tel{
+	float:right;
+	margin-right:20rpx;
+	color:#666;
+	font-size:35rpx;
+}
+.tel::after{
+	overflow:hidden;
+}
+.search_navigator{
+	padding:10rpx;
+	border-bottom:4rpx solid #dedede;
+	max-height:120rpx;
+	line-height:60rpx;
+	margin:0rpx 15rpx;
+	background-color:#fff;
+  width:93%;
+  display:flex;
+  justify-content: space-between;
+}
+.meal{
+  background-color:#dedede;
+  color:#666;
+	padding:10rpx;
+	margin-bottom:140rpx;
+	font-size: 37rpx;
+}
+.num{
+	margin:0 10rpx;
+}
+.numAdd{
+	display:inline-block;
+	border:4rpx solid #dedede;
+	border-radius:8rpx;
+	height:40rpx;
+	width:40rpx;
+	line-height:40rpx;
+	text-align:center;
+}
+
+.bottomBar{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:110rpx;
+	background-color:#fff;
+	border-top:4rpx solid #dedede;
+}
+.one,
+.two,
+.three,
+.four{
+	display:inline-block;
+	overflow:hidden;
+}
+
+.one,
+.two{
+  width:20%;
+	height:100%;
+	font-size:26rpx;
+	padding:10rpx 0;
+	position:relative;
+}
+.one button,
+.two button{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	opacity:0;
+}
+.one image,
+.two image,
+.three image{
+	width:35%;
+}
+.BarImage{
+	text-align:center;
+}
+.one text,
+.two text{
+	display:block;
+	text-align:center;
+}
+.three,
+.four{
+	width:30%;
+	font-size: 32rpx;
+	color:#fff;
+	text-align:center;
+	height:110rpx;
+	line-height:110rpx;
+}
+.three{
+	background-color:orange;
+}
+.four{
+	background-color: #ff2d4a;
+}
+.checked{
+	background-color:#ff2d4a;
+}
+.checkedIcon{
+	width:45rpx;
+}
+.three{
+	position:relative;
+}
+.gouwuNum{
+	position:absolute;
+	top:17rpx;
+	left:144rpx;
+	width:42rpx;
+	height:42rpx;
+	line-height:42rpx;
+	border-radius:40%;
+	color:#fff;
+	background-color:#f40;
+}

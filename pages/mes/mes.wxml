@@ -1,0 +1,24 @@
+<view class="con">
+      <!-- 第一区域：标题 -->
+      <view class="header">
+            <text>个人信息</text>
+      </view>
+      <!-- 第二区域：信息区域 -->
+      <view class="main">
+            <view>
+                  <button bindtap="goName">昵称</button>
+            </view>
+            <view>
+                  <button bindtap="goSex">性别</button>
+            </view>
+            <view>
+                  <button bindtap="goTel">手机号码</button>
+            </view>
+            <view>
+                  <button bindtap="goAddress">我的地址</button>
+            </view>
+            <view>
+                  <button bindtap="goEmail">电子信箱</button>
+            </view>
+      </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/orderCar/index.wxml-->
+<view class="gouwuche">购物车</view>
+<block wx:if="{{products.length!=0}}">
+<view class="meal">
+  <view class="search_navigator" wx:for="{{products}}" wx:key="id">
+    <text>{{item.productName}}</text>
+    <view>
+       <text class="numAdd" bindtap="numAddJian" data-oparation="{{-1}}" data-index="{{index}}">-</text>
+			 <text class="num">{{item.num}}</text>
+			 <text class="numAdd" bindtap="numAddJian" data-oparation="{{1}}" data-index="{{index}}">+</text>
+    </view>
+  </view>
+</view>
+</block>
+<block wx:else>
+   <view class="imageWrapper">
+   <image src="https://s2.ax1x.com/2020/02/28/3rwkvD.png" mode="widthFix"></image>
+	 </view>
+</block>
+
+<view class="all">
+	<view class="leftAll">
+		<view>合计: <text class="allPrice">¥{{price}}元</text></view>
+	</view>
+	<navigator class="rightAll" url="../orderSubmit/index">
+		结算(<text>{{Allnum}}</text>)
+	</navigator>
+</view>
