@@ -1,0 +1,18 @@
+.input-box{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    padding:20rpx;
+    background-color:#F0F0F0;
+}
+.input1{
+    background-color: white;
+    width:80%;
+    display: inline;
+    float:left;
+    height:60rpx;
+}
+.btn1{
+    float:right;
+    height:60rpx;
+}

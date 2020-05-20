@@ -1,0 +1,80 @@
+.con{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space; */
+  font-size: 35rpx;
+  background-color: #f5f5f5;
+}
+
+.bar{
+  border-bottom: 2rpx solid #777777;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  margin: 0 0 60rpx 0; 
+}
+
+.header{
+  line-height: 80rpx;
+  font-size: 50rpx;
+  font-weight: 700;
+  text-align: center;
+  /* margin: 0 0 60rpx 0; */
+  height:80rpx;
+  border: 1px solid #f5f5f5;
+  float: left;
+}
+
+.new-built{
+  float: right;
+  width: 420rpx;
+  height: 94rpx;
+  border-radius: 20rpx solid #777777;
+  background-color: rgb(255, 166, 0);
+}
+
+.add{
+  font-weight: 900;
+  font-size: 35rpx;
+  color: white;
+}
+
+.main{
+  width: 100vw;
+  font-size: 35rpx;
+  line-height: 80rpx;
+}
+
+.name,.menu,.owner,.tel,.list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main text{
+  line-height: 50rpx;
+  height: 50rpx;
+}
+
+.photo{
+  display: flex;
+  justify-content: center;
+}
+
+.photo image{
+  border-radius: 40rpx;
+  width: 600rpx;
+  height: 400rpx;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.veg{
+  width: 100%;
+}
+
+.menu{
+  margin: 10rpx 0 20rpx 0;
+}
+
+.list{
+  margin: 10rpx 0 20rpx 0;
+}

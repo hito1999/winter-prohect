@@ -1,0 +1,7 @@
+<view class="wrapped">
+       <view class="con">
+            <view>请选择您的身份：</view>
+                      <button class="owner" bindtap="goIndex">商家</button>
+                      <button class="order" bindtap="goOrder">订餐者</button>
+        </view>
+</view>

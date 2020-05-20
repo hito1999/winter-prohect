@@ -1,0 +1,47 @@
+<!--pages/chatting/index.wxml-->
+<view class="chatWrapper">
+	<view wx:for="{{text}}"  class="chatContain" wx:if="{{item.code!=2}}">
+		<block wx:if="{{item.to!=undefined}}">
+		    <view class="timeShow">{{item.str}}</view>
+				<view class="Text">
+					<image src="{{src}}" class="nickImage"></image>
+					<block wx:if="{{item.code==0}}">
+								<view class="triggle"></view>
+								<text class="baseKuang" space="nbsp" selectable>{{item.story}}</text>
+					</block>	
+					<block wx:elif="{{item.code==1}}">
+							<image  src="{{item.story}}" style="width:200rpx;" mode="widthFix" bindtap="preview" data-img="{{item.story}}"></image>
+					</block>
+				</view>
+		</block>
+		<block wx:else>
+		     	<view class="timeShow">{{item.time}}</view>
+		     	<view class="Text1">
+							<image src="{{item.fromurl}}" class="nickImage"></image>
+							<block wx:if="{{item.code==0}}">
+										<view class="triggle1"></view>
+										<text class="baseKuang1" space="nbsp" selectable>{{item.story}}</text>
+							</block>	
+							<block wx:elif="{{item.code==1}}">
+									<image  src="{{item.story}}" style="width:200rpx;" mode="widthFix" bindtap="preview" data-img="{{item.story}}"></image>
+							</block>
+				</view>
+		</block>
+	</view>
+</view>
+
+<view class="inputWrapper">
+	<view class="main">
+	   <image src="https://s2.ax1x.com/2020/02/28/3rw94x.png" mode="widthFix" bindtap="chooseImage"></image>
+		<view class="inputText">
+			<text>{{currentText}}</text>
+			<textarea class="Textarea" bindinput="getInput" maxlength="1000" value="{{currentText}}"></textarea>
+		</view>
+		<view class="{{!showLight?'send':'send1'}}" bindtap="sendFunction">发送</view>
+	</view>
+	<scroll-view class="{{show?'pictures':'picture1'}}" scroll-x="true">
+		<view class="pic">
+		   <chooseImage  wx:for="{{image}}" class="pic" src="{{item}}" index="{{index}}" bindCancel="cancelImage"></chooseImage>
+		</view>
+	</scroll-view>
+</view>

@@ -1,0 +1,42 @@
+page{
+    background-color: rgb(231, 231, 231);
+}
+view{
+    background-color:white;
+}
+.input-box{
+    background-color:white;
+    padding-bottom:50rpx;
+    padding:20rpx;
+}
+input{
+    width:50%;
+    float:right;
+}
+textarea{
+    margin-top:30rpx;
+    height:300rpx;
+    background-color:white;
+}
+.price-box{
+    display: flex;
+    justify-content:space-between;
+    padding-top:20rpx;
+    padding-bottom:20rpx;
+    border-top:1rpx solid rgb(226, 226, 226);
+    border-bottom:1rpx solid rgb(226, 226, 226);
+}
+.time-box{
+    display: flex;
+    justify-content:space-between;
+    padding-top:20rpx;
+    padding-bottom:20rpx;
+    border-bottom:1rpx solid rgb(226, 226, 226);
+}
+.id-box{
+    display: flex;
+    justify-content:space-between;
+    padding-top:20rpx;
+    padding-bottom:20rpx;
+    border-bottom:1rpx solid rgb(226, 226, 226);
+}

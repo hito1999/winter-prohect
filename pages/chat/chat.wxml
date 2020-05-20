@@ -1,0 +1,9 @@
+<view class="msg-box">
+  <msg inf="12313231231312323213312313"></msg>
+</view>
+<view class="input-box">
+  <input class="input1"></input>
+  <button class="btn1" size="mini" >
+    发送
+  </button>
+</view>

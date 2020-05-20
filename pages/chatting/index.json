@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "chooseImage":"../../components/chooseImage/index"
+  },
+   "navigationBarTitleText": "聊天界面"
+}

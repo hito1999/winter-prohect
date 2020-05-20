@@ -1,0 +1,28 @@
+<view class="con">
+      <!-- 区域一：导航 -->
+      <view class="bar">
+            <text class="header">我的店铺</text>
+            <button bindtap="goIncrease" class="new-built">
+                  <text class="add">+ </text>
+                  <text>新建店铺</text>
+            </button>
+      </view>
+      <!-- 区域二：店铺信息 -->
+      <view class="main">
+            <view class="seek">
+                  <button class="veg" bindtap="goSeek">查看店铺</button>
+            </view> 
+            <view class="menu">
+                  <button class="veg" bindtap="goMenu">添加菜谱</button>
+            </view>
+            <view class="menu">
+                  <button class="veg" bindtap="goMenuCom">已添加菜谱</button>
+            </view>
+            <view class="list">
+                  <button class="veg" bindtap="goList">未接单</button>
+            </view> 
+            <view class="list">
+                  <button class="veg" bindtap="goListCom">已接单</button>
+            </view>
+      </view>
+</view>

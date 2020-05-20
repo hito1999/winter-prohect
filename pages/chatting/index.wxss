@@ -1,0 +1,157 @@
+/* pages/chatting/index.wxss */
+Page{
+	background-color:rgb(245,245,245);
+}
+.chatWrapper{
+	margin-bottom:72vh;
+}
+.chatContain{
+	display:inline-block;
+	width:100vw;
+	margin-top:6rpx;
+}
+.inputWrapper{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100vw;
+	background-color:#dedede;
+	font-size:37rpx;
+}
+.main{
+	padding:10rpx 0;
+	background-color:#dedede;
+	display:flex;
+	justify-content:space-around;
+	max-height:70vh;
+}
+.pictures{
+	height:280rpx;
+	background-color:#dedede;
+	white-space:nowrap;
+	display:flex;
+}
+.picture1{
+	display:none;
+}
+.pic{
+	margin-right:10rpx;
+	height:260rpx;
+	display:inline-block;
+}
+.inputWrapper image{
+	width:10vw;
+}
+.inputText{
+	position:relative;
+	width:75vw;
+	min-height:70rpx;
+	border-radius:35rpx;
+	background-color:#fff;
+}
+.inputText text{
+	display:block;
+	box-sizing: border-box;
+	padding:10rpx 20rpx 0 20rpx;
+	width:73vw;
+	visibility:hidden;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.Textarea{
+	position:absolute;
+	top:0;
+	left:0;
+	box-sizing: border-box;
+	padding:10rpx 20rpx 0 20rpx;
+	width:100%;
+	height:100%;
+	border-radius:35rpx;
+}
+.send,
+.send1{
+	width:13vw;
+	height:70rpx;
+	border-radius:35rpx;
+	color:#fff;
+	line-height:70rpx;
+	background-color:skyblue;
+	text-align:center;
+}
+.send1{
+	background-color:rgb(30,144,255);
+}
+.timeShow{
+	line-height:60rpx;
+	text-align:center;
+	font-size:32rpx;
+	color:#666;
+}
+.Text,
+.Text1{
+	position:relative;
+}
+.nickImage{
+	width:80rpx;
+	height:80rpx;
+	border-radius:50%;
+}
+.Text image{
+	margin-right:20rpx;
+	float:right;
+}
+.Text1 image{
+	margin-left:20rpx;
+	float:left;
+}
+.baseKuang{
+	margin-top:7rpx;
+	margin-right:35rpx;
+	max-width:65vw;
+	padding:20rpx;
+	font-size:33rpx;
+	background-color:rgb(30,144,255);
+	border-radius:30rpx;
+	color:#fff;
+	float:right;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.baseKuang1{
+	margin-left:35rpx;
+	max-width:65vw;
+	padding:20rpx;
+	font-size:33rpx;
+	background-color:greenyellow;
+	border-radius:30rpx;
+	color:#000;
+	float:left;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.triggle{
+	float:right;
+	position:absolute;
+	right:110rpx;
+	top:27rpx;
+	width:0;
+	height:0;
+	border-width:16rpx;
+	border-style:solid;
+	border-color:rgb(30,144,255);
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+}
+.triggle1{
+	position:absolute;
+	left:110rpx;
+	top:20rpx;
+	width:0;
+	height:0;
+	border-width:16rpx;
+	border-style:solid;
+	border-color:greenyellow;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+  float:left;
+}

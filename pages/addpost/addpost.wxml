@@ -1,0 +1,25 @@
+<view class="input-box" hover-class="none" hover-stop-propagation="false">
+    <textarea class="content"
+    placeholder="输入跑腿内容，什么快递，地点，送达时间......"
+    value="{{content}}"
+    bindblur="change">
+    </textarea>
+    <view class="price-box">
+        <text class="iconfont icon-jiage text1">跑腿费</text>
+        <input class="" placeholder="这里输入价格" bindblur="getprice">
+        </input>
+    </view>
+    <view class="time-box">
+        <text class="iconfont icon-ico_home_committed text1">发帖时间</text>
+        <text class="">{{time}}</text>
+    </view>
+    <view class="id-box">
+        <text class="iconfont icon-yonghu text1">发帖用户Id</text>
+        <text class="">{{userid}}</text>
+    </view>
+    
+    <button  bindtap="submit"
+        hover-class="" hover-stop-propagation="false" >
+        提交
+    </button>
+</view>
