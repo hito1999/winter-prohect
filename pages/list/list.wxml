@@ -1,0 +1,18 @@
+<view class="wrapped">
+      <view class="con">
+        <view class="top">
+              <button class="post">接单信息</button>
+        </view>
+        <block wx:for="{{addBox}}" wx:key="index" class="box">
+              <view class="middle">
+                    <view class="content">食物：{{products[index]}}</view>
+                    <view class="content">需求：{{remark[index]}}</view>
+                    <view class="content">价格：{{price[index]}}</view>
+                    <view class="content">订单编号：{{order[index]}}</view>
+                    <view class="content">创建时间：</view>
+                    <view class="content">{{create[index]}}</view>
+                    <button bindtap="confirm" data-index="{{index}}" class="confirm">确认</button>
+              </view>
+        </block>
+      </view>
+</view>

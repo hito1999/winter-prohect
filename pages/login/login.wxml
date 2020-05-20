@@ -1,0 +1,10 @@
+<!--pages/firstLogin/index.wxml-->
+<view class="wrapper {{show1?'opo':''}}">
+	<view class="imageWrapper">
+		<image src="https://s2.ax1x.com/2020/02/28/3rwi8K.png" mode="widthFix"></image>
+		<view>小程序请求获取您的昵称,地址,头像等信息</view>
+	</view>
+	<view class="allow">
+		 <button class="allo" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取信息</button>
+	</view>
+</view>

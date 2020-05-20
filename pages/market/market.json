@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Win":"../../components/Win/Win"
+  },
+  "navigationBarTitleText": "二手旧货市场"
+}

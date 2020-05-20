@@ -1,0 +1,46 @@
+/* pages/firstLogin/index.wxss */
+.wrapper{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100vw;
+	height:35vh;
+	background-color:#dedede;
+}
+.opo{
+	display:none;
+}
+.imageWrapper{
+	display:flex;
+	padding:60rpx;
+	color:#666;
+}
+.imageWrapper image{
+	width:200rpx;
+}
+.imageWrapper view{
+	padding:0 20rpx;
+	line-height:60rpx;
+	height:120rpx;
+	font-size:37rpx;
+}
+.allow{
+	padding:0 60rpx;
+}
+.allow button{
+	margin:0;
+	padding:0;
+	width:280rpx;
+	height:90rpx;
+	line-height:90rpx;
+	color:#fff;
+	background-color:green;
+}
+.allo{
+	float:right;
+}
+
+.allow::after{
+	overflow:hidden;
+}
+
