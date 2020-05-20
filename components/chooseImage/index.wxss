@@ -1,0 +1,25 @@
+/* components/chooseImage/index.wxss */
+.imageWrapper{
+  height:260rpx;
+  position:relative;
+  margin-left:10rpx;
+  margin-bottom:10rpx;
+  float:left;
+}
+.ima{
+  height:260rpx;
+}
+.Icon,
+.Icon1{
+  position:absolute;
+  width:40rpx;
+  height:40rpx;
+  border-radius:20rpx;
+  border:2rpx solid #fff;
+  background-color:#ccc;
+  top:3rpx;
+  right:3rpx;
+}
+.Icon1{
+   background-color:rgb(30,144,255);
+}

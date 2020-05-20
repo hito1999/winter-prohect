@@ -1,0 +1,28 @@
+/* components/Lists/Lists.wxss */
+.body{
+  background-color: rgba(232, 243, 203, 0.575);
+  margin:5rpx;
+  padding:10rpx;
+  border: 2rpx solid rgb(173, 228, 230);
+  border-radius: 30rpx;
+  overflow:hidden;
+  transition: 1s;
+}
+.body2{
+  background-color: rgba(232, 243, 203, 0.575);
+  margin:5rpx;
+  padding:10rpx;
+  border: 2rpx solid rgb(173, 228, 230);
+  border-radius: 30rpx;
+  overflow:hidden;
+  transition: 1s;
+  opacity: 0.5;
+}
+.btn1{
+  float:right;
+  font-size:24rpx;
+}
+.shadow{
+  box-shadow: 10rpx 10rpx 10rpx grey;
+  background-color:rgba(216, 243, 142, 0.575);
+}

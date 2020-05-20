@@ -1,0 +1,12 @@
+<view class="{{one.invitationStatus==0 ? 'body' : 'body2'}}" hover-class="shadow">
+  <view class="id">id：{{one.id}}</view>
+  <view class="price">跑腿费：{{one.price}}
+  </view>
+  <view >是否可接受：
+  <icon type="{{one.invitationStatus==0 ? 'success' : 'warn'}}" size="16" color="{{one.invitationStatus==0 ? 'green' : 'red'}}"></icon>
+  </view>
+  <view class="person">发帖人：{{one.uesrId}}</view>
+  <view class="content">具体内容：{{one.content}}</view>  
+  <view class="time">创建时间：{{one.time}}</view> 
+  <button class="btn1" bindtap="goed" disabled="{{one.invitationStatus==0 ? false : true }}">我想接单</button>
+</view>

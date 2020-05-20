@@ -1,0 +1,23 @@
+<view class="parent" >
+    <view class="child" wx:for-items="{{one}}" wx:key="{{item.id}}" data-x="{{index}}" bindtap="read">
+            <view class="img-box">
+                <image class="pic" src="{{item.pic[0]}}" mode="aspectFill">
+                </image>
+            </view>
+            <view class="text-box">
+                <view class="interview">
+                    {{item.content}}
+                </view>
+                <view class="price">
+                    ¥{{item.price}}
+                </view>
+                <view class="bottom">
+                    <image class="head" src="{{item.head}}" mode="aspectFill">
+                    </image>
+                    <text class="time">
+                        {{item.createTime}}
+                    </text>
+                </view>
+            </view>
+    </view>  
+</view>

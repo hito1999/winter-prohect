@@ -1,0 +1,21 @@
+<view class="shell" >
+    <block wx:for="{{msg}}" wx:key="{{item.commentId}}">
+        <view class="body" hover-class="none" hover-stop-propagation="false">
+            <view class="top" hover-class="none" hover-stop-propagation="false">
+                <image class="head" src="{{item.headimage}}" mode="aspectFill">   
+                </image>
+                <view class="person">
+                    <view class="name">
+                        用户:{{item.user}}
+                    </view>
+                    <view class="time">
+                        发布于：{{item.createTime}}
+                    </view>
+                </view>
+            </view>
+            <view class="content" hover-class="none" hover-stop-propagation="false">
+                {{item.content}}
+            </view>
+        </view>
+    </block>
+</view>

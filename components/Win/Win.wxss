@@ -1,0 +1,61 @@
+.parent {
+    width: 100%;
+   background-color: rgb(240, 240, 240);
+   display: flex;
+   flex-flow: row wrap;
+   align-content: flex-start;
+   padding-left: 2%;
+   padding-right: 2%;
+  }
+.child {
+   box-sizing: border-box;
+   background-color: white;
+   flex: 0 0 46%;
+   margin-top: 10rpx;
+   margin-left: 2%;
+   margin-right: 2%;
+   border-radius: 20rpx;
+   overflow:hidden;
+  }
+.img-box{
+    width:100%;
+    display: flex;
+}
+.pic{
+    width:280rpx;
+    height:280rpx;
+    flex:1;
+}
+.text-box{
+    margin:10rpx;
+}
+.interview{
+    font-size:24rpx;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;/*控制显示的行数*/
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.price{
+    color:red;
+    font-size:40rpx;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    padding-bottom: 5rpx 0;
+}
+.botom{
+    padding:5rpx 0;
+    font-size:20rpx;
+    color:grey;
+}
+.time{
+    margin-left:50rpx;
+    font-size:20rpx;
+    color:grey;
+}
+.head{
+    width:40rpx;
+    height:40rpx;
+    margin-top:10rpx;
+}

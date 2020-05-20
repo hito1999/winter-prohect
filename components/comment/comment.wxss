@@ -1,0 +1,33 @@
+.shell{
+    width:100%;
+}
+.body{
+    border-top:1px grey solid;
+}
+.head{
+    width:50rpx;
+    height:50rpx; 
+    float:left;
+    margin-top:10rpx;
+    margin-right:10rpx;
+}
+.person{
+    float:left;
+    height:100%;
+    width:70%;
+    background-color:white;
+    font-size:24rpx;
+    color:grey;
+    padding-top:20rpx;
+}
+.name{
+    font-size:32rpx;
+    color:black;
+    font-weight:600;
+}
+.top{
+    width:100%;
+}
+.content{
+    width:100%;
+}

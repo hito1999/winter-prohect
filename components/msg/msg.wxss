@@ -1,0 +1,8 @@
+.body{
+    width:400rpx;
+    word-break:break-all;
+    background-color: rgba(232, 243, 203, 0.575);
+    padding:20rpx;
+    border-radius: 20rpx;
+    border:1px solid yellowgreen;
+}
